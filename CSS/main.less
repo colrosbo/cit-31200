@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+}
+
+//FONT
+@import url(http://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
+
+@font-face {
+    font-family: 'Yeezy';
+    src: url("../../fonts/yeezy_tstar-bold-webfont.ttf");
+    src: url("../../fonts/yeezy_tstar-bold-webfont.woff") format("woff"),
+    url("../../fonts/yeezy_tstar-heavy-webfont.eot") format("eot");
+    font-weight: bold;
+}
+//FONT END
+
+body {
+    background-color: #EDEDE3;
+}
+
+h1 {
+    color: #20201E;
+    padding: 10px;
+    font-family: Yeezy;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    color: #20201E; 
+    background: transparent;
+    font-size:1.5em;
+    text-align: center;
+    line-height:100px;
+    }
+
+i {
+    font-size: 25px;
+    color:#20201E; 
+}
+
+.icons {
+    font-size: 25px;
+    color:#20201E; 
+}
+
+//NAV START
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items:right;
+    font-family: Helvetica, sans-serif;
+}
+
+.navWrapper{
+    position: fixed;
+    top: 10px;
+    right:0;
+    height: 200px;
+    width: 155px;
+    background-color: #ebebbe;
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content:flex-end;
+    border-radius: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+nav a
+{
+    font-size: 25px;
+    text-decoration: none;
+    color: #979691;
+    margin: 10px 20px;
+}
+nav a:hover
+{
+    color: rgb(77, 75, 75);
+    text-decoration: none;
+}
+//NAV END
+
+.section {
+    height:100%
+}
+
+//DROP DOWN STUFF
+.dropDownMenu{
+    padding:20px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+.toggle{
+    display:none;
+}
+
+@media screen and (min-width:600px) {
+    .dropDownMenu{
+        display:none;
+    }
+
+    .navWrapper{
+        height:100%;
+        position:relative;
+        width:100%;
+        background-color: transparent;
+        flex-direction: row;
+        top:0;
+    }
+}
+//END DROP DOWN STUFF
+
+@media screen and (max-width:600px) {
+    .icons {
+        bottom: 10px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+}
