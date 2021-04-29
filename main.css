@@ -1,19 +1,33 @@
-body {
-  margin: 0;
-  padding: 0;
+img {
+    height: 275px;
+    width: 275px;
+    display: inline-block;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
+.yellow {
+    color: yellow
 }
 
-.spidey {
-  animation: swing ease-in-out 2s infinite alternate;
-  transform-origin: 0% -15%;
+.limegreen {
+    color: rgb(72, 255, 0);
 }
 
-@keyframes swing {
-  0%{transform: rotate3d(0,0,1,115deg)}
-  100%{transform: rotate3d(0,0,1,-28deg)}
+.orange {
+    color: orange;
+}
+
+.cursive {
+    font-family: 'Brush Script MT', cursive;
+}
+
+.type {
+    font-family: 'Courier New', monospace;
+}
+
+.helvetica {
+    font-family: Helvetica, sans-serif;
+}
+
+.arial {
+    font-family: Arial, sans-serif;
 }
