@@ -1,33 +1,139 @@
-img {
-    height: 275px;
-    width: 275px;
-    display: inline-block;
+* {
+  margin: 0;
+}
+body {
+  background-color: #EDEDE3;
+}
+h1,h3 {
+  color: #20201E;
+  padding: 10px;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  color: #20201E;
+  background: transparent;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 100px;
+}
+i {
+  font-size: 25px;
+  color: #20201E;
+}
+.icons {
+  font-size: 25px;
+  color: #20201E;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+}
+.navWrapper {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  height: 250px;
+  width: 155px;
+  background-color: #b4e8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #979691;
+  margin: 10px 20px;
+}
+nav a:hover {
+  color: #4d4b4b;
+  text-decoration: none;
+}
+.section {
+  height: 100%;
+}
+.dropDownMenu {
+  padding: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.toggle {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .dropDownMenu {
+    display: none;
+  }
+  .navWrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: row;
+    top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .icons {
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.yellow {
-    color: yellow
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.limegreen {
-    color: rgb(72, 255, 0);
+.card {
+  height: 350px;
+  display: flex;
 }
 
-.orange {
-    color: orange;
+.card-img-top {
+  height:225px;
 }
 
-.cursive {
-    font-family: 'Brush Script MT', cursive;
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.type {
-    font-family: 'Courier New', monospace;
+.homeimg {
+  height: 25%;
+  width: 25%;
+  padding:10px;
 }
 
-.helvetica {
-    font-family: Helvetica, sans-serif;
-}
-
-.arial {
-    font-family: Arial, sans-serif;
+.aboutimg {
+  height: 30%;
+  width: 30%;
+  padding:10px;
 }
